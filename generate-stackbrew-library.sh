@@ -60,6 +60,7 @@ getArches 'python'
 
 cat <<-EOH
 # this file is generated via https://github.com/docker-library/python/blob/$(fileCommit "$self")/$self
+
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon),
              Joseph Ferguson <yosifkit@gmail.com> (@yosifkit)
 GitRepo: https://github.com/docker-library/python.git

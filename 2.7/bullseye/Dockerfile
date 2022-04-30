@@ -23,8 +23,8 @@ RUN set -eux; \
 	; \
 	rm -rf /var/lib/apt/lists/*
 
-ENV GPG_KEY A035C8C19219BA821ECEA86B64E628F8D684696D
-ENV PYTHON_VERSION 3.10.4
+ENV GPG_KEY 
+ENV PYTHON_VERSION 2.7.18
 
 RUN set -eux; \
 	\
@@ -86,9 +86,9 @@ RUN set -eux; \
 	done
 
 # if this is called "PIP_VERSION", pip explodes with "ValueError: invalid truth value '<VERSION>'"
-ENV PYTHON_PIP_VERSION 22.0.4
+ENV PYTHON_PIP_VERSION 21.2.4
 # https://github.com/docker-library/python/issues/365
-ENV PYTHON_SETUPTOOLS_VERSION 58.1.0
+ENV PYTHON_SETUPTOOLS_VERSION 57.5.0
 # https://github.com/pypa/get-pip
 ENV PYTHON_GET_PIP_URL https://github.com/pypa/get-pip/raw/38e54e5de07c66e875c11a1ebbdb938854625dd8/public/get-pip.py
 ENV PYTHON_GET_PIP_SHA256 e235c437e5c7d7524fbce3880ca39b917a73dc565e0c813465b7a7a329bb279a
